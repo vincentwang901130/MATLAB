@@ -86,9 +86,9 @@ fprintf('Error: %.2f\n', maxerror);
  % Two-sample Kolmogorov-Smirnov test
 [h,p,k]=kstest2(ED,F);
 if h==1
-	fprintf('Reject the null hypothesis that the distribution function is E [5%% significance level]\n');
+	fprintf('Reject the null hypothesis that the distribution function is ED [5%% significance level]\n');
     fprintf('Hypothesized Function [rejected, p-value: %.2f]\n',p);
 else
-    fprintf('Accept the null hypothesis that the distribution function is E\n');
+    fprintf('Accept the null hypothesis that the distribution function is ED\n');
     fprintf('Hypothesized Function [accepted, p-value: %.2f]\n',p);
  end
